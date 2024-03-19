@@ -10,39 +10,41 @@
     background-color: var(--color-body);
 }
 .header{
-    
+    background: red;
     height: 8vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
-.titulo{
-    font-size: 5vh;
+.header_titulo{
+    display: flex;
+    font-size: 300%;
     text-transform: capitalize;
     margin-left: 8vh;
     color: var(--color-tertiary)
 }
-.menu{
-    margin-right: 8vh;
+.header_menu{
+    display: flex;
     text-transform: capitalize;
-    width: 40%;
+    width: 45%;
     text-align: center;
-    color: var(--color-primary)
-}
-.menu ul{
-    font-size: 2.6vh;
+    background: blue;
    
 }
-.menu ul li{
+.header_menu ul{
+    font-size: 200%;
+   
+}
+.header_menu ul li{
     display: inline;
-    margin: 2vh;
+    margin: 10%;
     
 }
-.menu ul li a{
+.header_menu ul li a{
     text-decoration: none;
     margin: .5vh;
-    color: black;
+    color:var(--color-primary);
 }
 .container1{
     width: 100%;
