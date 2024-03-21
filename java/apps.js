@@ -602,27 +602,27 @@ const mostrarCarrito=()=>{
     `
 
 }
-const obtenerArticulos = () => {
-    const contenedorArticulos = document.getElementById("idArticulo");
-    if (contenedorArticulos) {
-        const articulos = contenedorArticulos.querySelectorAll(".articulo"); 
+// const obtenerArticulos = () => {
+//     const contenedorArticulos = document.getElementById("idArticulo");
+//     if (contenedorArticulos) {
+//         const articulos = contenedorArticulos.querySelectorAll(".articulo"); 
 
-        let listaArticulos = []; 
+//         let listaArticulos = []; 
 
-        articulos.forEach(articulo => {
+//         articulos.forEach(articulo => {
 
-            let ArticuloAgregar = {
-                nombre: articulo.querySelector(".nombre").innerText, 
-                imagen: articulo.querySelector(".imagen").getAttribute("src") 
-            };
+//             let ArticuloAgregar = {
+//                 nombre: articulo.querySelector(".nombre").innerText, 
+//                 imagen: articulo.querySelector(".imagen").getAttribute("src") 
+//             };
 
     
-            listaArticulos.push(ArticuloAgregar);
-        });
+//             listaArticulos.push(ArticuloAgregar);
+//         });
 
-        console.log(listaArticulos); 
-    } else {
-        console.log("No se encontró el contenedor de artículos");
-    }
-};
+//         console.log(listaArticulos); 
+//     } else {
+//         console.log("No se encontró el contenedor de artículos");
+//     }
+// };
 
