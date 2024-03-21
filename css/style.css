@@ -9,6 +9,9 @@
     width: 100%;
     margin: 0;
 }
+.menu_lista{
+    display: none;
+}
 .header{
     width: 100%;
     height: 10vh;
@@ -22,6 +25,11 @@
     /* background: blue;     */
     background: var(--color-body);
     opacity: 80%;
+}
+
+.header_menu ul li a:hover{
+    color: var(--color-tertiary);
+    border: 0.5vh solid var(--color-primary);
 }
 .header_titulo{
     display: flex;
@@ -65,6 +73,7 @@
     width: 100%;
     height:90vh;
     margin-top: 10vh;
+    padding-top: 10vh;
     display: flex;
     flex: 1;
     /* background:greenyellow; */
@@ -129,7 +138,15 @@
     width: 100%;
     
 }
+.left button:hover, .container2 button:hover{
+    color:var(--color-primary);
+    box-shadow: 3px 2px 10px var(--color-primary) ;
+}
 
+.container5 button:hover{
+    color:var(--color-body );
+    box-shadow: 3px 2px 10px var(--color-tertiary) ;
+}
 .rigth{
     /* background: beige; */
     height: 90vh;
@@ -145,7 +162,7 @@
 .container2{
     width: 100%;    
     height: 90vh;
-    margin-top: 10%;
+    margin-top:20%;
     display: flex;
     flex: 1;
 }
@@ -228,7 +245,7 @@
     flex-direction: column;
     width: 100%;    
     height: 90vh;
-    margin-top: 10%;
+    margin-top: 20%;
     
 }
 
@@ -280,6 +297,23 @@
     height: 80%;
     background:var(--color-shadow);
 }
+.container3_img{
+    display: flex;
+    /* background:yellow; */
+    justify-content: end;
+    
+}
+.container3_img i{
+    display: flex;
+    background-color: var(--color-tertiary);
+    color: var(--color-primary);
+    height: 5vh;
+    font-size: 200%;
+}
+.container3_img img{
+   
+    /* background-color: blue; */
+}
 .container3_bottom_a1{
     
     /* background-color: beige; */
@@ -298,7 +332,7 @@
 }
 .container3_bottom img{
     display: flex;
-    width: 80%;
+    width: 77%;
     /* background: goldenrod; */
     
 }
@@ -451,7 +485,7 @@
     font-weight: 400;
     font-style: normal;
     font-size: 400%;
-    width: 50%;
+    width: 80%;
     text-align: center;
     margin: 0;
 }
@@ -473,7 +507,7 @@
     display: flex;
     flex:1;
     width: 100%;    
-    height: 40vh;
+    height: 45vh;
     margin-top: 10%;
     justify-content: center;
     align-items: center;
@@ -483,6 +517,15 @@
 .container6 article ul li{
     display: flex;
     list-style: none;
+    
+}
+.container6 article ul li a{
+    text-decoration: none;
+    color: var(--color-primary);
+}
+.container6 article ul li a:hover{
+    color: var(--color-tertiary);
+    
 }
 .container6 article ul{
     /* background: red; */
@@ -494,6 +537,7 @@
     flex:1;
     height: 70%;
     color: var(--color-primary);
+    
    
 }
 .container6_a1{
@@ -539,10 +583,17 @@
     .body{
         width: 100%;
         margin: 10px;
+
+    }
+    .menu_lista{
+        display: flex;
+        color: var(--color-primary);
+        margin-right: 5vh;
+        font-size: 150%;
     }
     .header{
-        width: 80%;
-        height: 10%;
+        width: 100%;
+        height: 10%;   
     }
     .header_titulo{
         margin: 0;
@@ -556,7 +607,8 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 90vh;
+       
+        height:90vh;
     }
     .container1{
         flex: 1;
@@ -564,6 +616,7 @@
         display: flex;
         justify-content: center;
         margin-left: 0;
+        
         /* background: red; */
     }
     .rigth{
@@ -572,6 +625,7 @@
         flex: 0.6;
         display: flex;
         justify-content: center;
+        margin: 0;
     }
     .left {
         /* background: yellow; */
@@ -594,30 +648,119 @@
         width: 80%;
     }
     .container2{
-        font-size: 70%;
+        display: flex;
+        flex: 1;
+        font-size: 60%;
+        margin-top: 20%;
         flex-direction: column-reverse;
     }
     .container2_rigth{
         display: flex;
+        flex: 1;
+        height: 90%;
         margin: 0;
         width: 100%;
-        background: yellow;
+        /* background: yellow; */
         justify-content: center;
         align-items: center;
     }
     .container2 p,.container2 h2{
-        background-color: blue;
+        /* background-color: blue; */
         text-align: center;
        
     }
     .container2_left{
-        background: red;
+        /* background: red; */
         justify-content: center;
         width: 100%;
+        flex: 1.5;
+    }
+    .container2_left img{
+        width: 80%;
+    }
+    .container3{
+        display: flex;
+        flex: 1;
+        height: 190vh;
+        width: 100%;
+    }
+    .container3_top{
+        display: flex;
+    }
+    .container3_top h1{
+        /* background-color: greenyellow; */
+        width: 95%;
+        font-size: 210%;
+        text-align: center;
+        display: flex;
+    }
+    .container3_bottom{
+        width: 100%;
+        height: 30%;
+    }
+    .container3_bottom article{
+        width: 80%;
+    }
+    
+    .container4{
+        display: flex;
+        flex: 1;
+        margin-top: 25%;
+        height: 220vh;
+    }
+    .container4_top{
+        display: flex;
+        flex: 0.5;
+    }
+    .container4_top p{
+        margin-top: 25%;
+    }
+    .container4_top h1{
+        /* background-color: greenyellow; */
+        width: 95%;
+        font-size: 210%;
+        text-align: center;
+        display: flex;
+    }
+    .container4_bottom article{
+        width: 80%;
+    }
+    .container5{
+        display: flex;
+        flex: 1;
+        margin: 10% 0px 10px;
+        height: 40vh;
+        flex: 0.5;
+        width:100%;
     }
     .container5 p{
-        display: flex;
-        flex-direction: column;
-        font-size: 20%;
+        font-size: 150%;
+        width: 80%;
     }
+    .container5 button{
+        font-size: 90%;
+        width: 30%;
+    }
+    .container6{
+        margin-top: 25%;
+        height: 120vh;
+        font-size: 80%;
+        justify-content: left;
+        text-align: none;
+        align-items: baseline;
+    }
+    .container6 article{
+        /* background-color: yellow; */
+        height: 10vh;
+        margin: 0;
+        width: 70%;
+        color: var(--color-primary);
+    }
+    .container3_bottom img{
+        display: flex;
+        width: 80%;
+        /* background: goldenrod; */
+        
+
+
 }

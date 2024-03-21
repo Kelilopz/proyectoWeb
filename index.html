@@ -1,43 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>proyecto_Web</title>
 </head>
+
 <body class="body">
     <header class="header">
         <div class="header_titulo">
             <p>foods</p>
         </div>
+        <div class="menu_lista">
+            <i class='bx bx-list-plus'></i>
+        </div>
         <div class="header_menu">
             <ul>
-                <li>
-                    <a href="#">home</a>
-                </li>
-                <li>
-                    <a href="#">about</a>
-                </li>
-                <li>
-                    <a href="#">menu</a>
-                </li>
-                <li>
-                    <a href="#">service</a>
-                </li>
-                <li>
-                    <a href="#">contact</a>
-                </li>
+                <li><a href="#Cont1">Home</a></li>
+                <li><a href="#Cont2">About</a></li>
+                <li><a href="#Cont3">Menu</a></li>
+                <li><a href="#Cont4">Service</a></li>
+                <li><a href="#Cont6">Contact</a></li>
             </ul>
         </div>
     </header>
-    <div class="container1">
+    <div id="Cont1" class="container1">
         <section class="left">
             <h1>full website</h1>
             <p class="left_p1">Foods the </p>
             <p class="left_p2">Most precious thing</p>
-            <button><p>today's menu</p></button>
+            <button>
+                <p>today's menu</p>
+            </button>
 
         </section>
         <section class="rigth">
@@ -45,7 +42,7 @@
 
         </section>
     </div>
-    <div class="container2">
+    <div id="Cont2" class="container2">
         <section class="container2_left">
             <img src="storage/img/about.png" alt="">
         </section>
@@ -53,44 +50,62 @@
             <p class="container2_p1">About Us</p>
             <h2>We speak the good
                 food language</h2>
-            <p class="container2_p2">It is a long established fact that a 
-                be distracted by the readable content 
+            <p class="container2_p2">It is a long established fact that a
+                be distracted by the readable content
                 looking at its layout. The point of </p>
-            
-            <button><p>Learn More</p></button>
+
+            <button>
+                <p>Learn More</p>
+            </button>
 
 
         </section>
     </div>
-    
-    <div class="container3">
+
+    <div id="Cont3" class="container3">
         <section class="container3_top">
             <p>Food Menu</p>
             <h1>Fresh taste and grat price</h1>
         </section>
         <section class="container3_bottom">
             <article class="container3_bottom_a1">
-                <img src="storage/img/food1.png" alt="">
-                <p class="container3_bottom_p1">Chicken Burger</p>
-                <p class="container3_bottom_p2">Tasty Food</p>
-                <p class="container3_bottom_p3">$11.00</p>
+                <div class="container3_img">
+                    <img src="storage/img/food1.png" alt="">
+                    <i class='bx bx-cart-add'></i>
+                </div>
+                <div>
+                    <p class="container3_bottom_p1">Chicken Burger</p>
+                    <p class="container3_bottom_p2">Tasty Food</p>
+                    <p class="container3_bottom_p3">$11.00</p>
+                </div>
+
             </article>
             <article class="container3_bottom_a2">
-                <img src="storage/img/food2.png" alt="">
-                <p class="container3_bottom_p1">Special Beef Burger</p>
-                <p class="container3_bottom_p2">Tasty Food</p>
-                <p class="container3_bottom_p3">$11.00</p>
+                <div class="container3_img">
+                    <img src="storage/img/food2.png" alt="">
+                    <i class='bx bx-cart-add'></i>
+                </div>
+                <div>
+                    <p class="container3_bottom_p1">Special Beef Burger</p>
+                    <p class="container3_bottom_p2">Tasty Food</p>
+                    <p class="container3_bottom_p3">$11.00</p>
+                </div>
             </article>
             <article class="container3_bottom_a3">
-                <img src="storage/img/food2.png" alt="">
-                <p class="container3_bottom_p1">Chicken Fry Pack</p>
-                <p class="container3_bottom_p2">Tasty Food</p>
-                <p class="container3_bottom_p3">$11.00</p>
+                <div class="container3_img">
+                    <img src="storage/img/food2.png" alt="">
+                    <i class='bx bx-cart-add'></i>
+                </div>
+                <div>
+                    <p class="container3_bottom_p1">Chicken Fry Pack</p>
+                    <p class="container3_bottom_p2">Tasty Food</p>
+                    <p class="container3_bottom_p3">$11.00</p>
+                </div>
             </article>
 
         </section>
     </div>
-    <div class="container4">
+    <div id="Cont4" class="container4">
         <section class="container4_top">
             <p>Services</p>
             <h1>We provide best food services</h1>
@@ -99,45 +114,45 @@
             <article class="container4_bottom_a1">
                 <img src="storage/img/s1.png" alt="">
                 <p class="container4_bottom_p1">Order</p>
-                <p class="container4_bottom_p2">It is a long established  
-                    be distracted by the readable 
+                <p class="container4_bottom_p2">It is a long established
+                    be distracted by the readable
                     looking at its layout. </p>
-                
+
             </article>
             <article class="container4_bottom_a2">
                 <img src="storage/img/s2.png" alt="">
                 <p class="container4_bottom_p1">Shipping</p>
-                <p class="container4_bottom_p2">It is a long established  
-                    be distracted by the readable 
+                <p class="container4_bottom_p2">It is a long established
+                    be distracted by the readable
                     looking at its layout.</p>
             </article>
             <article class="container4_bottom_a3">
                 <img src="storage/img/s3.png" alt="">
                 <p class="container4_bottom_p1">Dellvered</p>
-                <p class="container4_bottom_p2">It is a long established  
-                    be distracted by the readable 
+                <p class="container4_bottom_p2">It is a long established
+                    be distracted by the readable
                     looking at its layout.</p>
             </article>
 
         </section>
     </div>
-    <div class="container5">
+    <div id="Cont5" class="container5">
         <article>
             <p>We make quality food
                 Everyday</p>
             <button>Learn More</button>
         </article>
     </div>
-    <div class="container6">
+    <div id="Cont6" class="container6">
         <article class="container6_a1">
             <h3>Menu links</h3>
             <div></div>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Menu</li>
-                <li>Service</li>
-                <li>Contact</li>
+                <li><a href="#Cont1">Home</a></li>
+                <li><a href="#Cont2">About</a></li>
+                <li><a href="#Cont3">Menu</a></li>
+                <li><a href="#Cont4">Service</a></li>
+                <li><a href="#Cont6">Contact</a></li>
             </ul>
         </article>
         <article class="container6_a2">
@@ -166,11 +181,12 @@
             <div></div>
             <ul>
                 <li><i class='bx bxl-instagram'></i></li>
-                <li><i class='bx bxl-facebook-circle' ></i></li>
-                <li><i class='bx bxl-whatsapp' ></i></li>
-                <li><i class='bx bxl-twitter' ></i></li>
+                <li><i class='bx bxl-facebook-circle'></i></li>
+                <li><i class='bx bxl-whatsapp'></i></li>
+                <li><i class='bx bxl-twitter'></i></li>
             </ul>
         </article>
     </div>
 </body>
+
 </html>
