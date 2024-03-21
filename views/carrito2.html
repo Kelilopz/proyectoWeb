@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="../css/carritos.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <h1>CampusShop</h1>
+        </div>
+        <nav class="menu" id="menu">
+            <ul>
+                <li class="home">
+                    <img src="../storage/img/menu.png" alt="">
+                    <a href="index.html">Todos los productos</a>
+                </li>
+                <li>
+                    <img src="../storage/img/jacket.png" alt="">
+                    <button onclick="nuevaPaginaAbrigos()"><a >Abrigos</a></button>
+                </li>
+                <li>
+                    <img src="../storage/img/tshirt.png" alt="">
+                    <button onclick="PaginaCamisas()"><a>Camisetas</a></button>
+                </li>
+                <li>
+                    <img src="../storage/img/pant.png" alt="">
+                    <button onclick="paginaPantalones()"><a>Pantalones</a></button>
+                </li>
+            </ul>
+        </nav>
+        <nav class="carrito" id="menu">
+            <i class='bx bxs-cart'></i>
+            <a href="views/carritos.html">Carritos</a>
+            <button id="contador">2</button>
+        </nav>
+        <nav class="copy" id="menu">
+            <i class='bx bx-copyright'></i>
+            <a href="#">2023 @Kelly Lopez</a>
+        </nav>
+    </header>
+    <main>
+        <div class="h1">
+            <h1>Carrito</h1>
+        </div>
+        <div class="main">
+    
+            <div >
+                <div class="img">
+                    <img src="../storage/img/abrigo02.png" alt="abrigo02">
+                </div>
+                <div >
+                    <h2>Abrigo</h2>
+                    <p>Chaqueta Impermeable En Gabán Para Dama 'Negro'</p>
+                </div>                    
+                <div >
+                    <h3>Cantidad</h3>
+                    <div class="num">2</div>
+                </div>
+                <div>
+                    <h3>Precio c/u</h3>
+                    <p>$ 2.000</p>
+                </div>
+                <div >
+                    <h3>subtotal</h3>
+                    <p>$ 4.000</p>
+                </div>
+                <div >
+                    <a href="carrito1.html">
+                        <i class='bx bx-trash' style='color:#e07621'  ></i>
+                    </a>
+                </div>
+            </div>
+            <div class="item03">
+                <div class="img">
+                    <img src="../storage/img/camisa03.png" alt="camisa03">
+                </div>
+                <div >
+                    <h2>Camiseta</h2>
+                    <p>Camiseta Deportiva, Crossfit, Gym, Ejercicios Al Aire Libre</p>
+                </div>                    
+                <div >
+                    <h3>Cantidad</h3>
+                    <div class="num">1</div>
+                </div>
+                <div >
+                    <h3>Precio c/u</h3>
+                    <p>$ 2.500</p>
+                </div>
+                <div >
+                    <h3>subtotal</h3>
+                    <p>$ 2.500</p>
+                </div>
+                <div class="btn">
+                    <a href="carrito1.html">
+                        <i class='bx bx-trash' style='color:#e07621'  ></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="abajo">
+            <div class="boton01">
+                <a href="../views/carritovacio.html">Vaciar Carrito</a>
+            </div>
+            <div class="container02">
+                <div class="texto">
+                    <p>Total</p>
+                    <p>$ 5.500</p>
+                </div>
+                <div class="boton02">
+                    <a href="#">Comprar Ahora</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

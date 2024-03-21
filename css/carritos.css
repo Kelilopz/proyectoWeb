@@ -29,13 +29,12 @@ main{
 .main{
    
     box-shadow: 0 0 8px var(--color-tertiary);
-   
     overflow-y: scroll;
     margin: auto;
     width: 75vw;
-    height: 70vh;
+    height: 60vh;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 4vh;
 }
 ::-webkit-scrollbar {
@@ -57,43 +56,18 @@ main{
  }
  
 main img{
-    width: 150px;
-    height: 180px;
+    width: 140px;
+    height: 140px;
 }
-.item{
-    background: var(--color-shadow);
-    border-radius: 5px;
-}
-.container{
-    background: var(--color-negro);
-    border: 0px solid gray;
-    border-radius: 25px;
 
-}
-.container div{
-    
-    gap: 9vh;
-    width: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-}
 .main{
     border: 0.2vh solid gray;
 }
-main button{
-    margin: 2% 0% 2% 0%;
-    font-weight: 400;
-    background-color: var(--color-tertiary);
-    color: var(--color-black);
-}
-main div p{
-    font-weight: 600;
-}
-.main div div div p{
-    font-weight: 500;
-}
 
+.main div div{
+    display: flex;
+    flex-direction: column;
+}
 main h1{
     display: flex;
     align-items: center;
@@ -107,7 +81,6 @@ main h1{
 }
 .h1{
     display: flex;
-    justify-content: space-around;
 }
 .h1 button{
     padding: 2em;
@@ -124,6 +97,7 @@ header{
     overflow: hidden;
 }
 .menu img{
+   
     border: .1em solid var(--color-tertiary);
     border-radius: 100%;
     background-color:  var(--color-tertiary);
@@ -150,9 +124,6 @@ header{
     /* background: yellow; */
     margin-top: 1em;
     align-items: center;
-   
-    
-
 }
 
 .menu ul li a{
@@ -212,10 +183,53 @@ header{
 }
 
 .main div{
-    /* background:var(--color-shadow) ; */
+    background:var(--color-shadow) ;
     justify-content: center;
     text-align: center;
     align-items: center;
+    display: flex;
+    flex: 1;
    
 
+}
+.abajo {
+    /* background: rebeccapurple; */
+    display: flex;
+
+}
+.container02{
+    color: var(--color-primary);
+    border-radius: 7px;
+    border: 0.5vh solid var(--color-tertiary);
+    margin: 10px 2vh 0vh 90vh;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.texto{
+    
+    margin-right: 3vh;
+    width: 20vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    /* background-color: red; */
+}
+
+.boton01{
+    background: var(--color-tertiary);
+    margin: 10px 40px 0px;
+    display: flex;
+    align-items: center;
+    border: 0.2vh solid gray;
+    color: var(--color-primary);
+    border-radius: 7px;
+}
+.boton02{
+    display: flex;
+    background: var(--color-tertiary);
+    align-items: center;
+    margin: 6%;
+    width: 70%;
+    
 }

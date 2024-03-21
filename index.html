@@ -6,7 +6,7 @@
     <title><Canvas>CampusShop</Canvas></title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <script src="js/main.js"></script>
+
 </head>
 <body>
     <header>
@@ -21,34 +21,34 @@
                 </li>
                 <li>
                     <img src="storage/img/jacket.png" alt="">
-                    <a href="views/abrigos.html">Abrigos</a>
+                    <button onclick="nuevaPaginaAbrigos()"><a >Abrigos</a></button>
                 </li>
                 <li>
                     <img src="storage/img/tshirt.png" alt="">
-                    <a href="views/camisetas.html">Camisetas</a>
+                    <button onclick="PaginaCamisas()"><a>Camisetas</a></button>
                 </li>
                 <li>
                     <img src="storage/img/pant.png" alt="">
-                    <a href="views/pantalones.html">Pantalones</a>
+                    <button onclick="paginaPantalones()"><a>Pantalones</a></button>
                 </li>
             </ul>
         </nav>
         <nav class="carrito" id="menu">
             <i class='bx bxs-cart'></i>
-            <a href="views/carritos.html">Carritos</a>
-            <button id="contador">0</button>
+            <a href="views/carrito3.html">Carritos</a>
+            <button id="contador">3</button>
         </nav>
         <nav class="copy" id="menu">
             <i class='bx bx-copyright'></i>
             <a href="#">2023 @Camper</a>
         </nav>
     </header>
-    <main>
+    <main id="main"> 
         <div class="h1">
             <h1>Todos los Productos</h1>
         </div>
-        <div class="main">
-            <div class="item01 c">
+        <div class="main" >
+            <div id="1" class="item">
                 <img src="storage/img/abrigo01.png" alt="abrigo01">
                 <div class="container">
                     <p>Chaqueta Impermeable En Gabán Para Dama Azul</p>
@@ -58,7 +58,7 @@
                     </div> 
                 </div>
             </div>
-            <div class="item02 c">
+            <div id="2" class="item">
                 <img src="storage/img/abrigo02.png" alt="abrigo02">
                 <div class="container">
                     <p>Chaqueta Impermeable En Gabán Para Dama 'Negro'</p>
@@ -68,7 +68,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item03 c">
+            <div id="3" class="item">
                 <img src="storage/img/abrigo03.png" alt="abrigo03">
                 <div class="container">
                     <p>Chaqueta Impermeable En Gabán Para Dama 'Blanco'</p>
@@ -78,7 +78,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item04 c">
+            <div id="4" class="item">
                 <img src="storage/img/abrigo04.png" alt="abrigo04">
                 <div class="container">
                     <p>Chaqueta Hombre Cuero </p>
@@ -88,7 +88,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item05 c">
+            <div id="5" class="item">
                 <img src="storage/img/abrigo05.png" alt="abrigo05">
                 <div class="container">
                     <p>Chamarra moderna unisex</p>
@@ -98,7 +98,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item06 c">
+            <div id="6" class="item">
                 <img src="storage/img/abrigo06.png" alt="abrigo06">
                 <div class="container">
                     <p>Abrigo largo color cafe</p>
@@ -108,7 +108,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item07 c">
+            <div id="7" class="item">
                 <img src="storage/img/abrigo07.png" alt="abrigo07">
                 <div class="container">
                     <p>Abrigo de invierno blanco</p>
@@ -118,7 +118,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item08 c">
+            <div id="8" class="item">
                 <img src="storage/img/abrigo08.png" alt="abrigo08">
                 <div class="container">
                     <p>Esmoking elegante para hombre</p>
@@ -128,7 +128,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item09 c">
+            <div id="9" class="item">
                 <img src="storage/img/abrigo09.png" alt="abrigo09">
                 <div class="container">
                     <p>Abrigo imperneable azul cielo</p>
@@ -138,7 +138,11 @@
                     </div>
                 </div>
             </div>
-            <div class="item10 c">
+
+
+
+            <!-- Camisas -->
+            <div id="10" class="item">
                 <img src="../storage/img/camisa01.png" alt="camisa01">
                 <div class="container">
                     <p>Camiseta De Compresión En Licra Uv Slim</p>
@@ -148,7 +152,7 @@
                     </div> 
                 </div>
             </div>
-            <div class="item11 c">
+            <div id="11" class="item">
                 <img src="../storage/img/camisa02.png" alt="camisa02">
                 <div class="container">
                     <p>Camiseta Tipo Polo Color Dama Mujer</p>
@@ -158,7 +162,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item12 c">
+            <div id="12" class="item">
                 <img src="../storage/img/camisa03.png" alt="camisa03">
                 <div class="container">
                     <p>Camiseta Deportiva, Crossfit, Gym, Ejercicios Al Aire Libre</p>
@@ -168,7 +172,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item13 c">
+            <div id="13" class="item">
                 <img src="../storage/img/camisa04.png" alt="camisa04">
                 <div class="container">
                     <p>Camisetas Bandas De Rock Metal Heavy Riffs</p>
@@ -178,7 +182,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item14 c">
+            <div id="14" class="item">
                 <img src="../storage/img/camisa05.png" alt="camisa05">
                 <div class="container">
                     <p>Camiseta Anime Nezuko Kamado Kimetsu No Yaiba Demon Slayer</p>
@@ -188,7 +192,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item15 c">
+            <div id="15" class="item">
                 <img src="../storage/img/camisa06.png" alt="camisa06">
                 <div class="container">
                     <p> Camisa de algodon negra semformal</p>
@@ -198,7 +202,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item16 c">
+            <div id="16" class="item">
                 <img src="../storage/img/camisa07.png" alt="camisa07">
                 <div class="container">
                     <p>Camisa de Cuadros Manga corta, Para Hombre</p>
@@ -208,7 +212,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item17 c">
+            <div id="17" class="item">
                 <img src="../storage/img/camisa08.png" alt="camisa08">
                 <div class="container">
                     <p>Camiseta de Cuadros Roja con negro unisex</p>
@@ -218,7 +222,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item18 c">
+            <div id="18" class="item">
                 <img src="../storage/img/camisa09.png" alt="pantalon09">
                 <div class="container">
                     <p>Camisa de lineas algodon artificial</p>
@@ -228,7 +232,13 @@
                     </div>
                 </div>
             </div>
-            <div class="item19 c">
+
+
+
+            <!-- pantalones -->
+
+            
+            <div id="19" class="item">
                 <img src="../storage/img/pantalon01.png" alt="pantalon01">
                 <div class="container">
                     <p>Pantalon En Dril Licrado Para Hombre</p>
@@ -238,7 +248,7 @@
                     </div> 
                 </div>
             </div>
-            <div class="item20 c">
+            <div id="20" class="item">
                 <img src="../storage/img/pantalon02.png" alt="pantalon02">
                 <div class="container">
                     <p>Pantalón Camuflado Hermoso</p>
@@ -248,7 +258,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item21 c">
+            <div id="21" class="item">
                 <img src="../storage/img/pantalon03.png" alt="pantalon03">
                 <div class="container">
                     <p>Pantalón Jogger Cargo, Táctico, Militar</p>
@@ -258,7 +268,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item22 c">
+            <div id="22" class="item">
                 <img src="../storage/img/pantalon04.png" alt="pantalon04">
                 <div class="container">
                     <p>Pantalón Jeans De Colores Entubado Para Hombre</p>
@@ -268,7 +278,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item23 c">
+            <div id="23" class="item">
                 <img src="../storage/img/pantalon05.png" alt="pantalon05">
                 <div class="container">
                     <p>Pantalon Camuflado, De Bolsillos 100% Dreal</p>
@@ -278,7 +288,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item24 c">
+            <div id="24" class="item">
                 <img src="../storage/img/pantalon06.png" alt="pantalon06">
                 <div class="container">
                     <p>Pantalon Azul Bota Ahcha, Altura de Cadera</p>
@@ -288,7 +298,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item25 c">
+            <div id="25" class="item">
                 <img src="../storage/img/pantalon07.png" alt="pantalon07">
                 <div class="container">
                     <p>Pantalon de Vestir Azul Marino</p>
@@ -298,7 +308,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item26 c">
+            <div id="26" class="item">
                 <img src="../storage/img/pantalon08.png" alt="pantalon08">
                 <div class="container">
                     <p>Jean Casual para hombre</p>
@@ -308,7 +318,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item27 c">
+            <div id="27" class="item">
                 <img src="../storage/img/pantalon09.png" alt="pantalon09">
                 <div class="container">
                     <p>Jogger Negro Bota Ancha con Bolsillos</p>
@@ -320,5 +330,6 @@
             </div>
         </div>
     </main>
+    <script src="java\apps.js"></script>
 </body>
 </html>
