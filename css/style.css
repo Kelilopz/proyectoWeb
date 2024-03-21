@@ -756,6 +756,18 @@
         width: 70%;
         color: var(--color-primary);
     }
+    #cont6_a4{
+        width: 100%;
+        /* background: rebeccapurple; */
+        text-align: center;
+        align-items: center;
+       
+    }
+    #cont6_a4 i{
+       font-size: 180%;
+       
+    }
+   
     .container3_bottom img{
         display: flex;
         width: 80%;
